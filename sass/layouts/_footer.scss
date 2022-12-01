@@ -1,0 +1,125 @@
+.footer-logo {
+    padding-top: 60px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.footer {
+    background: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+}
+
+.footer-list {
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.footer-icons {
+    display: flex;
+}
+
+.footer-mar-icons {
+    margin-right: 70px;
+}
+
+.address {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    margin-bottom: 9px;
+    margin-top: 0;
+}
+
+.contact-footer {
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 9px;
+}
+
+.contact-foot {
+    margin-bottom: 9px;
+}
+
+.footer-icons-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-icons-item {
+    width: 44px;
+    height: 44px;
+}
+
+.footer-icons-link {
+    
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #ffffff;
+    background: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms linear, fill 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, 
+    &:focus {
+    color: #2196F3;
+    background-color: #2196F3;
+    fill: #FFFFFF;
+    }
+}
+
+
+
+.form-footer {
+    margin-left: 93px;
+}
+
+
+.footer-online-form {
+    display: flex;
+}
+
+.footer-input {
+    width: 358px;
+    height: 50px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 15px;
+    color: #ffffff;
+    margin-right: 12px;
+}
+
+.end {
+    margin-top: 20px;
+    margin-bottom: 9px;
+}
