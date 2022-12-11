@@ -1,77 +1,73 @@
 .job-title {
-    text-align: center;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: #757575;
-    margin-top: 0;
-    margin-bottom: 16px;
-    padding-bottom: 0;
+  text-align: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-top: 0;
+  margin-bottom: 16px;
+  padding-bottom: 0;
 }
 
-.contacts-title {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
+.section-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.32;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
     font-size: 36px;
     line-height: 1.67;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
     margin-bottom: 50px;
-    margin-top: 0;
+  }
 }
 
-.footer-logo-title {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+.footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 
-    color: #FFFFFF;
-}
+  margin-bottom: 20px;
 
-.form-footer-title {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+  color: #ffffff;
 
-    color: #FFFFFF;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .modal-title {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
-    letter-spacing: 0.03em;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
 
-    margin-bottom: 12px;
-    margin-top: 0;
-    color: #212121;
+  margin-bottom: 12px;
+  margin-top: 0;
+  color: #212121;
 }
 
 .modal-lable-title {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    /* identical to box height */
-    letter-spacing: 0.01em;
-    margin-bottom: 4px;
-    color: #757575;
-    display: block;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  /* identical to box height */
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+  color: #757575;
+  display: block;
 }

@@ -25,10 +25,25 @@
   <body>
     <header class="header">
       <div class="container header__container">
-        <nav class="navigation">
-          <a href="./index.html" class="logo logo__navigation"
-            ><span class="logo-icon">Web</span>Studio</a
+        <a href="./index.html" class="logo logo__navigation"
+          ><span class="logo-icon">Web</span>Studio</a
+        >
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
           >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        <nav class="navigation">
           <ul class="menu list">
             <li class="menu__mar">
               <a href="./index.html" class="link studio current">Студія</a>
@@ -47,7 +62,7 @@
               <svg class="svg-header" width="16" height="12">
                 <use href="./image/auth-nav-icons.svg#icon-envelope"></use>
               </svg>
-              >info@devstudio.com</a
+              info@devstudio.com</a
             >
           </li>
           <li class="connect__telmail">
@@ -55,23 +70,55 @@
               <svg class="svg-header" width="16" height="12">
                 <use href="./image/auth-nav-icons.svg#icon-smartphone"></use>
               </svg>
-              >+38 096 111 11</a
+              +38 096 111 11</a
             >
           </li>
         </ul>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu">
+            <svg
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+
+          <ul class="mobile-menu">
+            <li><a href="" class="link">About</a></li>
+            <li><a href="" class="link">Products</a></li>
+            <li><a href="" class="link">Contacts</a></li>
+            <li><a href="" class="link">Career</a></li>
+          </ul>
+
+          <ul class="mobile-social">
+            <li class="mobile-item">
+              <a href="" class="mobile-social-link link">Instagram</a>
+            </li>
+            <li class="mobile-item"><a href="" class="mobile-social-link link">Twitter</a></li>
+            <li class="mobile-item">
+              <a href="" class="mobile-social-link link">Facebook</a>
+            </li>
+            <li class="mobile-item">
+              <a href="" class="mobile-social-link link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
       <!-- ---------Hero--------- -->
       <section class="hero">
         <div class="container hero__container">
-          <h1 class="hero__title">
-            Ефективні рішення для <br />
-            вашого бізнесу
-          </h1>
-          <button type="button" class="button-order" data-modal-open>
-            Замовити послугу
-          </button>
+          <h1 class="hero__title"> Ефективні рішення для вашого бізнесу </h1>
+          <button type="button" class="button-order" data-modal-open> Замовити послугу </button>
         </div>
       </section>
       <section class="section">
@@ -85,9 +132,7 @@
               </div>
               <h3 class="description">Увага до деталей</h3>
               <p class="meaning">
-                Ідейні міркування, і навіть початок <br />
-                повсякденної роботи з формування <br />
-                позиції.
+                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
             <li class="top-icons-item item">
@@ -98,8 +143,7 @@
               </div>
               <h3 class="description">Пунктуальність</h3>
               <p class="meaning">
-                Завдання організації, особливо рамки <br />
-                і місце навчання кадрів тягне у себе.
+                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
             <li class="top-icons-item item">
@@ -110,8 +154,7 @@
               </div>
               <h3 class="description">Планування</h3>
               <p class="meaning">
-                Так само консультація з широким <br />
-                активом значною мірою зумовлює.
+                Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
             <li class="top-icons-item item">
@@ -122,9 +165,7 @@
               </div>
               <h3 class="description">Сучасні технології</h3>
               <p class="meaning">
-                Значимість цих проблем настільки <br />
-                очевидна, що реалізація планових <br />
-                завдань.
+                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
               </p>
             </li>
           </ul>
@@ -132,54 +173,70 @@
       </section>
       <section class="section-pic">
         <div class="container">
-          <h2 class="section-mid">Чим ми займаємося</h2>
+          <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="images list">
             <li class="images-middle">
               <div class="images-middle-wrap">
-                <img
-                  src="./image/keyboard.jpg"
-                  alt="клавіатура"
-                  width="370"
-                  class="images-pic"
-                />
+                <img src="./image/keyboard.jpg" alt="клавіатура" width="370" class="images-pic" />
                 <p class="images-middle-text">десктопні додатки</p>
               </div>
             </li>
             <li class="images-middle">
               <div class="images-middle-wrap">
-                <img
-                  src="./image/imgtelephone.jpg"
-                  alt="телефон"
-                  width="370"
-                  class="images-pic"
-                />
+                <img src="./image/imgtelephone.jpg" alt="телефон" width="370" class="images-pic" />
                 <p class="images-middle-text">мобільні додатки</p>
               </div>
             </li>
             <li class="images-middle">
               <div class="images-middle-wrap">
-                <img
-                  src="./image/imggradient.jpg"
-                  alt="градіент"
-                  width="370"
-                  class="images-last"
-                />
+                <img src="./image/imggradient.jpg" alt="градіент" width="370" class="images-last" />
                 <p class="images-middle-text">дизайнерські рішення</p>
               </div>
             </li>
           </ul>
         </div>
       </section>
-      <section class="section-bg">
+      <section class="section team">
         <div class="container">
-          <h2 class="team">Наша команда</h2>
-          <ul class="staff list">
+          <h2 class="section-title">Наша команда</h2>
+          <ul class="staff-list list">
             <li class="card-bg">
-              <img
-                src="./image/imgproduct.jpg"
-                alt="продукт_менеджер"
-                width="270"
-              />
+              <img src="./image/imgproduct.jpg" alt="продукт_менеджер" width="270" />
+              <!-- <picture>
+                <source
+                  srcset="./image/index/desktop-img-1.jpg 1x, ./image/index/desktop-img-1@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="./image/index/tablet-img-1.jpg 1x, ./image/index/tablet-img-1@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="./image/index/mobile-img-1.jpg 1x, ./image/index/mobile-img-1@2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+
+                <img src="./image/index/mobile-img-1.jpg" class="team-img" alt="Игорь Демьяненко" />
+              </picture> -->
+
+              <!-- или picture 👆 или img srcset 👇 -->
+
+              <!-- <img
+                srcset="
+                  ./images/team/team_mb@1x.jpg 450w,
+                  ./images/team/team_mb@2x.jpg 900w,
+                  ./images/team/team_tb@1x.jpg 354w,
+                  ./images/team/team_tb@2x.jpg 708w,
+                  ./images/team/team_dt@1x.jpg 270w,
+                  ./images/team/team_dt@2x.jpg 540w
+                "
+                src="./images/team/team_mb@1x.jpg"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                min-width="270"
+                alt="фото І.Дем'яненеко"
+              />  -->
               <div class="card-box">
                 <p class="staff-name">Ігор Дем'яненко</p>
                 <p class="job-title">Product Designer</p>
@@ -194,9 +251,7 @@
                   <li class="soc-icons-item">
                     <a href="" class="soc-icons-link link">
                       <svg class="soc-icons-icon" width="20" height="20">
-                        <use
-                          href="./image/symbol-defs.svg#icon-twittersvg"
-                        ></use>
+                        <use href="./image/symbol-defs.svg#icon-twittersvg"></use>
                       </svg>
                     </a>
                   </li>
@@ -218,11 +273,7 @@
               </div>
             </li>
             <li class="card-bg">
-              <img
-                src="./image/imgfrontend.jpg"
-                alt="фронтенд_розробник"
-                width="270"
-              />
+              <img src="./image/imgfrontend.jpg" alt="фронтенд_розробник" width="270" />
               <div class="card-box">
                 <p class="staff-name">Ігор Дем'яненко</p>
                 <p class="job-title">Product Designer</p>
@@ -237,9 +288,7 @@
                   <li class="soc-icons-item">
                     <a href="" class="soc-icons-link link">
                       <svg class="soc-icons-icon" width="20" height="20">
-                        <use
-                          href="./image/symbol-defs.svg#icon-twittersvg"
-                        ></use>
+                        <use href="./image/symbol-defs.svg#icon-twittersvg"></use>
                       </svg>
                     </a>
                   </li>
@@ -261,11 +310,7 @@
               </div>
             </li>
             <li class="card-bg">
-              <img
-                src="./image/imgmarketing.jpg"
-                alt="маркетолог"
-                width="270"
-              />
+              <img src="./image/imgmarketing.jpg" alt="маркетолог" width="270" />
               <div class="card-box">
                 <p class="staff-name">Микола Тарасов</p>
                 <p class="job-title">Marketing</p>
@@ -280,9 +325,7 @@
                   <li class="soc-icons-item">
                     <a href="" class="soc-icons-link link">
                       <svg class="soc-icons-icon" width="20" height="20">
-                        <use
-                          href="./image/symbol-defs.svg#icon-twittersvg"
-                        ></use>
+                        <use href="./image/symbol-defs.svg#icon-twittersvg"></use>
                       </svg>
                     </a>
                   </li>
@@ -319,9 +362,7 @@
                   <li class="soc-icons-item">
                     <a href="" class="soc-icons-link link">
                       <svg class="soc-icons-icon" width="20" height="20">
-                        <use
-                          href="./image/symbol-defs.svg#icon-twittersvg"
-                        ></use>
+                        <use href="./image/symbol-defs.svg#icon-twittersvg"></use>
                       </svg>
                     </a>
                   </li>
@@ -345,61 +386,49 @@
           </ul>
         </div>
       </section>
-      <section class="contacts-sec">
+      <section class="section">
         <div class="container">
-          <h2 class="contacts-title">Постійні клієнти</h2>
+          <h2 class="section-title">Постійні клієнти</h2>
           <ul class="clients-list list">
             <li class="clients-item">
               <a href="" class="clients-link link">
                 <svg class="soc-company-icon" width="106" height="60">
-                  <use
-                    href="./image/logocompany.svg#icon-Logocompany-one"
-                  ></use>
+                  <use href="./image/logocompany.svg#icon-Logocompany-one"></use>
                 </svg>
               </a>
             </li>
             <li class="clients-item">
               <a href="" class="clients-link link">
                 <svg class="soc-company-icon" width="106" height="60">
-                  <use
-                    href="./image/logocompany.svg#icon-Logocompany-two"
-                  ></use>
+                  <use href="./image/logocompany.svg#icon-Logocompany-two"></use>
                 </svg>
               </a>
             </li>
             <li class="clients-item">
               <a href="" class="clients-link link">
                 <svg class="soc-company-icon" width="106" height="60">
-                  <use
-                    href="./image/logocompany.svg#icon-Logocompany-three"
-                  ></use>
+                  <use href="./image/logocompany.svg#icon-Logocompany-three"></use>
                 </svg>
               </a>
             </li>
             <li class="clients-item">
               <a href="" class="clients-link link">
                 <svg class="soc-company-icon" width="106" height="60">
-                  <use
-                    href="./image/logocompany.svg#icon-Logocompany-four"
-                  ></use>
+                  <use href="./image/logocompany.svg#icon-Logocompany-four"></use>
                 </svg>
               </a>
             </li>
             <li class="clients-item">
               <a href="" class="clients-link link">
                 <svg class="soc-company-icon" width="106" height="60">
-                  <use
-                    href="./image/logocompany.svg#icon-Logocompany-five"
-                  ></use>
+                  <use href="./image/logocompany.svg#icon-Logocompany-five"></use>
                 </svg>
               </a>
             </li>
             <li class="clients-item">
               <a href="" class="clients-link link">
                 <svg class="soc-company-icon" width="106" height="60">
-                  <use
-                    href="./image/logocompany.svg#icon-Logocompany-six"
-                  ></use>
+                  <use href="./image/logocompany.svg#icon-Logocompany-six"></use>
                 </svg>
               </a>
             </li>
@@ -410,9 +439,7 @@
     <footer class="footer">
       <div class="container footer-icons">
         <div class="footer-mar-icons">
-          <a href="./index.html" class="footer-logo"
-            ><span class="logo-icon">Web</span>Studio</a
-          >
+          <a href="./index.html" class="footer-logo"><span class="logo-icon">Web</span>Studio</a>
           <ul class="footer-list">
             <li>
               <address class="address">
@@ -421,22 +448,18 @@
             </li>
             <li>
               <address class="contact-foot">
-                <a href="mailto:info@devstudio.com" class="contact-footer"
-                  >info@devstudio.com</a
-                >
+                <a href="mailto:info@devstudio.com" class="contact-footer">info@devstudio.com</a>
               </address>
             </li>
             <li>
               <address>
-                <a href="tel:+380961111111" class="contact-footer"
-                  >+38 096 111 11 11</a
-                >
+                <a href="tel:+380961111111" class="contact-footer">+38 096 111 11 11</a>
               </address>
             </li>
           </ul>
         </div>
         <div>
-          <h3 class="footer-logo-title">приєднуйтесь</h3>
+          <p class="footer-title">приєднуйтесь</p>
           <ul class="footer-icons-list list">
             <li class="footer-icons-item">
               <a href="" class="footer-icons-link link">
@@ -469,22 +492,16 @@
           </ul>
         </div>
         <div class="form-footer">
-          <h3 class="form-footer-title">Підпишіться на розсилку</h3>
+          <p class="footer-title">Підпишіться на розсилку</p>
           <form class="footer-online-form">
-            <input
-              type="email"
-              name="sub-email"
-              class="footer-input"
-              placeholder="E-mail"
-            />
-            <div class="footer-button-wrap">
-              <button type="submit" class="footer-button-submit">
-                Підписатися
-              </button>
+            <input type="email" name="sub-email" class="footer-input" placeholder="E-mail" />
+
+            <button type="submit" class="footer-button-submit">
+              Підписатися
               <svg class="footer-button-icon" height="24" width="24">
                 <use href="./image/modal-icons.svg#icon-icon-send"></use>
               </svg>
-            </div>
+            </button>
           </form>
         </div>
       </div>
@@ -516,13 +533,7 @@
           <div class="modal-field">
             <label for="user-tel" class="modal-lable-title">Телефон</label>
             <div class="modal-wrap">
-              <input
-                type="text"
-                name="user-tel"
-                class="modal-input"
-                placeholder=""
-                id="user-tel"
-              />
+              <input type="text" name="user-tel" class="modal-input" placeholder="" id="user-tel" />
               <svg class="modal-input-icon" width="18" height="18">
                 <use href="./image/modal-icons.svg#icon-phone"></use>
               </svg>
@@ -574,5 +585,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
