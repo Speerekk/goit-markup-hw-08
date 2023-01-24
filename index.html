@@ -56,24 +56,26 @@
             </li>
           </ul>
         </nav>
-        <ul class="connect header__connect">
-          <li class="connect__telmail">
-            <a href="mailto:info@devstudio.com" class="connect__contact">
-              <svg class="svg-header" width="16" height="12">
-                <use href="./image/auth-nav-icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="connect__telmail">
-            <a href="tel:+380961111111" class="connect__contact">
-              <svg class="svg-header" width="16" height="12">
-                <use href="./image/auth-nav-icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11</a
-            >
-          </li>
-        </ul>
+        <div class="connect_cont">
+          <ul class="connect header__connect">
+            <li class="connect__telmail">
+              <a href="mailto:info@devstudio.com" class="connect__contact">
+                <svg class="svg-header" width="16" height="12">
+                  <use href="./image/auth-nav-icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="connect__telmail">
+              <a href="tel:+380961111111" class="connect__contact">
+                <svg class="svg-header" width="16" height="12">
+                  <use href="./image/auth-nav-icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11</a
+              >
+            </li>
+          </ul>
+        </div>
         <div class="menu-container js-menu-container" id="mobile-menu">
           <button class="menu-toggle js-close-menu">
             <svg
@@ -90,14 +92,19 @@
               ></path>
             </svg>
           </button>
-
           <ul class="mobile-menu">
-            <li><a href="" class="link">About</a></li>
-            <li><a href="" class="link">Products</a></li>
-            <li><a href="" class="link">Contacts</a></li>
-            <li><a href="" class="link">Career</a></li>
+            <li class="mobile-menu-link"><a href="./index.html" class="link">Студія</a></li>
+            <li class="mobile-menu-link"><a href="./portfolio.html" class="link">Портфоліо</a></li>
+            <li class="mobile-menu-link"><a href="#" class="link">Контакти</a></li>
           </ul>
-
+          <ul class="mobile-contacts">
+            <li><a href="tel:+380961111111" class="mobile-contacts-tel"> +38 096 111 11</a> </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="mobile-contacts-mail">
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
           <ul class="mobile-social">
             <li class="mobile-item">
               <a href="" class="mobile-social-link link">Instagram</a>
@@ -201,42 +208,36 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="staff-list list">
             <li class="card-bg">
-              <img src="./image/imgproduct.jpg" alt="продукт_менеджер" width="270" />
+              <!-- <img src="./image/imgproduct.jpg" alt="продукт_менеджер" width="270" /> -->
               <!-- <picture>
+                <source srcset="./image/imgproduct, ./image/" media="(min-width: 1200px)" />
                 <source
-                  srcset="./image/index/desktop-img-1.jpg 1x, ./image/index/desktop-img-1@2x.jpg 2x"
-                  media="(min-width: 1200px)"
-                />
-
-                <source
-                  srcset="./image/index/tablet-img-1.jpg 1x, ./image/index/tablet-img-1@2x.jpg 2x"
+                  srcset="./image/imgproduct.jpg 1x, ./image/imgproduct-x2.jpg 2x"
                   media="(min-width: 768px)"
                 />
-
                 <source
                   srcset="./image/index/mobile-img-1.jpg 1x, ./image/index/mobile-img-1@2x.jpg 2x"
                   media="(min-width: 480px)"
                 />
-
                 <img src="./image/index/mobile-img-1.jpg" class="team-img" alt="Игорь Демьяненко" />
               </picture> -->
 
               <!-- или picture 👆 или img srcset 👇 -->
 
-              <!-- <img
+              <img
                 srcset="
-                  ./images/team/team_mb@1x.jpg 450w,
-                  ./images/team/team_mb@2x.jpg 900w,
-                  ./images/team/team_tb@1x.jpg 354w,
-                  ./images/team/team_tb@2x.jpg 708w,
-                  ./images/team/team_dt@1x.jpg 270w,
-                  ./images/team/team_dt@2x.jpg 540w
+                  ./image/imgproduct.jpg        450w,
+                  ./image/imgproduct-x2.jpg     900w,
+                  ./image/imgproduct.jpg        354w,
+                  ./image/imgtab-product-2x.jpg 708w,
+                  ./image/imgproduct.jpg        270w,
+                  ./image/imgproduct-x2.jpg     540w
                 "
-                src="./images/team/team_mb@1x.jpg"
+                src="./image/imgproduct.jpg"
                 sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                 min-width="270"
                 alt="фото І.Дем'яненеко"
-              />  -->
+              />
               <div class="card-box">
                 <p class="staff-name">Ігор Дем'яненко</p>
                 <p class="job-title">Product Designer</p>
@@ -273,10 +274,23 @@
               </div>
             </li>
             <li class="card-bg">
-              <img src="./image/imgfrontend.jpg" alt="фронтенд_розробник" width="270" />
+              <img
+                srcset="
+                  ./image/imgmob-front.jpg    450w,
+                  ./image/imgmob-front-2x.jpg 900w,
+                  ./image/imgtab-front.jpg    354w,
+                  ./image/imgtab-front-2x.jpg 708w,
+                  ./image/imgtab-front.jpg    270w,
+                  ./image/imgtab-front-2x.jpg 540w
+                "
+                src="./image/imgfrontend.jpg"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                min-width="270"
+                alt="фото О.Рєпіна"
+              />
               <div class="card-box">
-                <p class="staff-name">Ігор Дем'яненко</p>
-                <p class="job-title">Product Designer</p>
+                <p class="staff-name">Ольга Рєпіна</p>
+                <p class="job-title">Frontend Developer</p>
                 <ul class="soc-icons-list list">
                   <li class="soc-icons-item">
                     <a href="" class="soc-icons-link link">
@@ -310,7 +324,20 @@
               </div>
             </li>
             <li class="card-bg">
-              <img src="./image/imgmarketing.jpg" alt="маркетолог" width="270" />
+              <img
+                srcset="
+                  ./image/imgtab-mark.jpg    450w,
+                  ./image/imgtab-mark-2x.jpg 900w,
+                  ./image/imgtab-mark.jpg    354w,
+                  ./image/imgtab-mark-2x.jpg 708w,
+                  ./image/imgtab-mark.jpg    270w,
+                  ./image/imgtab-mark-2x.jpg 540w
+                "
+                src="./image/imgmarketing.jpg"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                min-width="270"
+                alt="фото М.Тарасов"
+              />
               <div class="card-box">
                 <p class="staff-name">Микола Тарасов</p>
                 <p class="job-title">Marketing</p>
@@ -347,7 +374,20 @@
               </div>
             </li>
             <li class="card-bg">
-              <img src="./image/imguidesigner.jpg" alt="дизайнер" width="270" />
+              <img
+                srcset="
+                  ./image/imgmob-ui.jpg    450w,
+                  ./image/imgmob-ui-2x.jpg 900w,
+                  ./image/imgtab-ui.jpg    354w,
+                  ./image/imgtab-ui-2x.jpg 708w,
+                  ./image/imgtab-ui.jpg    270w,
+                  ./image/imgtab-ui-2x.jpg 540w
+                "
+                src="./image/imguidesigner.jpg"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                min-width="270"
+                alt="фото М.Єрмаков"
+              />
               <div class="card-box">
                 <p class="staff-name">Михайло Єрмаков</p>
                 <p class="job-title">UI Designer</p>

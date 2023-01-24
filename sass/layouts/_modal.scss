@@ -105,10 +105,14 @@
 }
 
 .modal-check-text {
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.17px;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+  }
   display: flex;
   text-align: center;
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.17;

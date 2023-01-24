@@ -1,19 +1,22 @@
 .hero {
+  @media (min-width: 1200px) {
+    padding: 200px 0;
+  }
   text-align: center;
   background: #2f303a;
   max-width: 1600px;
-  height: 600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
+
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../image/Imghero-title.jpg);
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    .hero-section {
+    .hero {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../image/index/hero-img@2x.jpg);
+        url(../image/imgheader-bg-x2.jpg);
     }
   }
   background-repeat: no-repeat;
