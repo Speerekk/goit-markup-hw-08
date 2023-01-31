@@ -106,6 +106,7 @@
 
 .modal-check-text {
   @media screen and (max-width: 1199px) {
+    text-align: left;
     font-size: 12px;
     line-height: 1.17px;
     /* identical to box height */
@@ -123,16 +124,31 @@
   margin-top: 20px;
 
   & span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    fill: transparent;
+    @media (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      fill: transparent;
 
-    width: 16px;
-    height: 15px;
-    border: 2px solid #212121;
-    border-radius: 3px;
-    margin-right: 8px;
+      width: 16px;
+      height: 15px;
+      border: 2px solid #212121;
+      border-radius: 3px;
+      margin-right: 8px;
+    }
+    @media (max-width: 1199px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      fill: transparent;
+
+      width: 16px;
+      height: 15px;
+      border: 2px solid #212121;
+      border-radius: 3px;
+      margin-right: 8px;
+      margin-left: -13px;
+    }
   }
 
   .modal-input-check:focus + & span {
@@ -143,6 +159,8 @@
     border-color: transparent;
     fill: #ffffff;
   }
+  transition: fill 250ms linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .check-margin {

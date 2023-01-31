@@ -200,25 +200,44 @@ img {
   letter-spacing: 0.03em;
   color: #757575;
   margin-top: 20px;
+  transition: fill 250ms linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (max-width: 1199px) {
   .modal-check-text {
+    text-align: left;
     font-size: 12px;
     line-height: 1.17px;
     /* identical to box height */
     letter-spacing: 0.03em;
   }
 }
-.modal-check-text span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  fill: transparent;
-  width: 16px;
-  height: 15px;
-  border: 2px solid #212121;
-  border-radius: 3px;
-  margin-right: 8px;
+@media (min-width: 1200px) {
+  .modal-check-text span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 3px;
+    margin-right: 8px;
+  }
+}
+@media (max-width: 1199px) {
+  .modal-check-text span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 3px;
+    margin-right: 8px;
+    margin-left: -13px;
+  }
 }
 .modal-input-check:focus + .modal-check-text span {
   border-color: #2196f3;
@@ -314,7 +333,6 @@ img {
 }
 
 .menu {
-  overflow: hidden;
   display: flex;
   margin-left: 93px;
 }
@@ -427,7 +445,12 @@ img {
   }
 }
 
+.studio {
+  color: #2196f3;
+}
+
 .current {
+  color: #2196f3;
   transition: color 250ms linear;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -648,6 +671,8 @@ img {
 }
 
 .button {
+  cursor: pointer;
+  border-color: transparent;
   display: inline-block;
   padding: 6px 22px;
   background: #f5f4fa;
@@ -671,6 +696,8 @@ img {
 }
 
 .button-order {
+  border-color: transparent;
+  cursor: pointer;
   display: inline-block;
   padding: 11px 32px;
   font-weight: 700;
@@ -689,6 +716,8 @@ img {
 }
 
 .footer-button-submit {
+  border-color: transparent;
+  cursor: pointer;
   display: inline-block;
   position: relative;
   background: #2196f3;
@@ -729,6 +758,8 @@ img {
 }
 
 .button-modal-submit {
+  border-color: transparent;
+  cursor: pointer;
   display: inline-block;
   background-color: #2196f3;
   border-radius: 4px;

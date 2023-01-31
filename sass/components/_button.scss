@@ -1,4 +1,6 @@
 .button {
+  cursor: pointer;
+  border-color: transparent;
   display: inline-block;
   padding: 6px 22px;
   background: #f5f4fa;
@@ -26,6 +28,8 @@
 }
 
 .button-order {
+  border-color: transparent;
+  cursor: pointer;
   display: inline-block;
   padding: 11px 32px;
   font-weight: 700;
@@ -44,6 +48,8 @@
 }
 
 .footer-button-submit {
+  border-color: transparent;
+  cursor: pointer;
   display: inline-block;
   position: relative;
   background: #2196f3;
@@ -83,6 +89,8 @@
 }
 
 .button-modal-submit {
+  border-color: transparent;
+  cursor: pointer;
   display: inline-block;
   background-color: #2196f3;
   border-radius: 4px;
