@@ -314,6 +314,7 @@ img {
 }
 
 .menu {
+  overflow: hidden;
   display: flex;
   margin-left: 93px;
 }
@@ -345,6 +346,9 @@ img {
   }
 }
 
+.svg-header {
+  margin-right: 5px;
+}
 @media (max-width: 1199px) {
   .svg-header {
     width: 14px;
@@ -411,6 +415,7 @@ img {
 }
 
 .menu__mar {
+  color: #212121;
   text-decoration: none;
   margin-right: 50px;
   position: relative;
@@ -437,11 +442,8 @@ img {
   background: #2196f3;
 }
 
-.svg-header {
-  margin-right: 10px;
-}
-
 .connect__contact {
+  margin-left: auto;
   text-decoration: none;
   font-family: "Roboto";
   font-weight: 500;
@@ -460,6 +462,11 @@ img {
     font-size: 12px;
     line-height: 1.67;
     letter-spacing: 0.02em;
+  }
+}
+@media (max-width: 767px) {
+  .connect__contact {
+    display: none;
   }
 }
 .connect .connect__contact:hover, .connect .connect__contact:focus {
@@ -498,7 +505,7 @@ img {
 
 .menu .link:hover,
 .menu .link:focus {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .menu-toggle {
@@ -592,7 +599,6 @@ img {
 .hero {
   text-align: center;
   background: #2f303a;
-  max-width: 1600px;
   padding-top: 118px;
   padding-bottom: 118px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/Imghero-title.jpg);
