@@ -411,6 +411,7 @@ img {
 }
 
 .menu__mar {
+  text-decoration: none;
   margin-right: 50px;
   position: relative;
 }
