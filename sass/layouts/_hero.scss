@@ -2,13 +2,21 @@
   @media (min-width: 1200px) {
     padding: 200px 0;
   }
+  @media (max-width: 1199px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../image/hero-title-tablet.jpg);
+  }
+  @media (max-width: 767px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../image/hero-title-mob.jpg);
+  }
   text-align: center;
   background: #2f303a;
 
   padding-top: 118px;
   padding-bottom: 118px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../image/Imghero-title.jpg);
+    url(../image/hero-title.jpg);
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
