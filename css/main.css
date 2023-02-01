@@ -206,6 +206,7 @@ img {
 @media screen and (max-width: 1199px) {
   .modal-check-text {
     text-align: left;
+    align-items: center;
     font-size: 12px;
     line-height: 1.17px;
     /* identical to box height */
